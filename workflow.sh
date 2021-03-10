@@ -108,26 +108,6 @@ cmm_publish() {
   popd
 }
 
-cmm_branch() {
-
-  options=()
-  mapfile -t options < <(git for-each-ref --format='%(refname:short)' refs/heads/) &>/dev/null
-
-  select opt in "${options[@]}"
-  do
-      if [[ "$opt" ]]; then
-          git checkout "$opt"
-          return
-      else
-          echo "Wrong Input. Please enter the correct input"
-      fi
-  done
-}
-
-cmm_shell() (
-  bash
-)
-
 cmm_exit() {
   popd
   exit
@@ -136,7 +116,7 @@ cmm_exit() {
 cmm_main() (
   pushd $CMM_SOURCE
     PS3="> "
-    select option in exit edit build publish repertoire shell
+    select option in exit edit build publish
     do
       $(printf "cmm_%s\n" $option); exitcode=$?
       if [ $exitcode -ne 0 ]; then return; fi
@@ -153,8 +133,6 @@ default_msg="wip"
 #------------------------------------------------------------------------------
 
 cmm_repertoire() {
-  pushd $CMM_SOURCE/_data
-
   sqlite3 <<EOS
 
 .headers on
@@ -171,12 +149,22 @@ AND a.composer = b.name
 ORDER BY 3, 1;
 
 EOS
-
-  popd
 }
 
+cmm_data() (
+  pushd $CMM_SOURCE/_data
+    PS3=">> "
+    select option in exit repertoire
+    do
+      $(printf "cmm_%s\n" $option); exitcode=$?
+      if [ $exitcode -ne 0 ]; then return; fi
+      continue
+    done
+  popd
+)
+
 #------------------------------------------------------------------------------
-#   Docker
+#   Docker Utilities
 #------------------------------------------------------------------------------
 
 cmm_docker() {
@@ -189,10 +177,6 @@ cmm_docker() {
     docker run --rm --mount type=bind,source="$PWD",target=/cmm $CMD
   fi
 }
-
-#------------------------------------------------------------------------------
-#   imagemagick via Docker
-#------------------------------------------------------------------------------
 
 cmm_resize() {
   # USAGE: cmm_resize 1300 original.jpg [output.jpg]
@@ -229,10 +213,6 @@ cmm_pixelate() {
   cmm_docker
 }
 
-#------------------------------------------------------------------------------
-#    ffmpeg via Docker
-#------------------------------------------------------------------------------
-
 cmm_fade() {
   pushd ~/Movies
   START=2035
@@ -240,4 +220,22 @@ cmm_fade() {
   CMD='linuxserver/ffmpeg -i /cmm/in.mp4 -hide_banner -filter_complex \"fade=t=out:st=$START:d=$DURATION, afade=t=out:st=2035:d=5\" -c:v libx264 -c:a aac /cmm/out.mp4'
   cmm_docker
   popd
+}
+
+#------------------------------------------------------------------------------
+#    experimental
+#------------------------------------------------------------------------------
+
+cmm_branch() {
+  options=()
+  mapfile -t options < <(git for-each-ref --format='%(refname:short)' refs/heads/) &>/dev/null
+  select opt in "${options[@]}"
+  do
+      if [[ "$opt" ]]; then
+          git checkout "$opt"
+          return
+      else
+          echo "Wrong Input. Please enter the correct input"
+      fi
+  done
 }
