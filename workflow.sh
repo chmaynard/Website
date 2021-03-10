@@ -71,8 +71,8 @@ cmm_build() {
 }
 
 cmm_message() {
-    read -ep "Commit message [$default_msg]: " input
-    msg="${input:-$default_msg}"
+    read -ep "Commit message [$msg]: " input
+    msg="${input:-$msg}"
 }
 
 cmm_commit() {
@@ -81,7 +81,7 @@ cmm_commit() {
     cmm_echo "no changes"
   else
     git add -A
-    git commit --quiet -m "$msg"
+    cmm_message && git commit --quiet -m "$msg"
   fi
 }
 
@@ -92,7 +92,7 @@ cmm_publish() {
   # (commits on feature branch will become orphans)
   git reset --soft $defaultBranch
   # commit all changes on feature branch
-  cmm_message; cmm_commit
+  cmm_commit
 
   cmm_echo "publishing source code"
   pushb $defaultBranch
@@ -116,7 +116,7 @@ cmm_exit() {
 cmm_main() (
   pushd $CMM_SOURCE
     PS3="> "
-    select option in exit edit build publish
+    select option in exit edit build commit publish
     do
       $(printf "cmm_%s\n" $option); exitcode=$?
       if [ $exitcode -ne 0 ]; then return; fi
@@ -126,7 +126,7 @@ cmm_main() (
 )
 
 alias cmm=cmm_main
-default_msg="wip"
+msg="wip"
 
 #------------------------------------------------------------------------------
 #    Data Utilities
@@ -226,16 +226,16 @@ cmm_fade() {
 #    experimental
 #------------------------------------------------------------------------------
 
-cmm_branch() {
-  options=()
-  mapfile -t options < <(git for-each-ref --format='%(refname:short)' refs/heads/) &>/dev/null
-  select opt in "${options[@]}"
-  do
-      if [[ "$opt" ]]; then
-          git checkout "$opt"
-          return
-      else
-          echo "Wrong Input. Please enter the correct input"
-      fi
-  done
-}
+# cmm_branch() {
+#   options=()
+#   mapfile -t options < <(git for-each-ref --format='%(refname:short)' refs/heads/) &>/dev/null
+#   select opt in "${options[@]}"
+#   do
+#       if [[ "$opt" ]]; then
+#           git checkout "$opt"
+#           return
+#       else
+#           echo "Wrong Input. Please enter the correct input"
+#       fi
+#   done
+# }
