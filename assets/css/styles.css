@@ -21,8 +21,9 @@
     border-color: #cbe7e0;
     font-size: 12pt;
     line-height: 1.5;
-    margin: 25px 0px;
-    padding: 16px;
+    padding: 20px;
+    text-align: left;
+    align-items: center;
 }
 
 #basic-table {
@@ -129,4 +130,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+progress::-webkit-progress-bar {
+  background-color: AliceBlue;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: thin;
+  border-color: LightSlateGray;
+
+}
+
+progress::-webkit-progress-value {
+  background-color: CornflowerBlue;
+  border-radius: 7px;
 }
