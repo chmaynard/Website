@@ -92,6 +92,13 @@
   text-align: center;
 }
 
+.figcaption {
+  font-size: 11pt;
+  line-height:1.5;
+  padding:0.7em;
+  text-align: center; 
+}
+
 .align-left {
   justify-content: flex-start;
 }
@@ -145,3 +152,4 @@ progress::-webkit-progress-value {
   background-color: CornflowerBlue;
   border-radius: 7px;
 }
+
