@@ -1,0 +1,233 @@
+#simple-list{
+  font-family: monospace;
+  list-style: none;
+  margin-left: 0.5cm;
+  padding-bottom: 16px;
+}
+
+#italic-list{
+  font-style: italic;
+  list-style: none inside;
+  margin-left: 0.25cm;
+}
+
+#basic-table {
+    border-collapse: collapse;
+    border: 0px solid rgb(200,200,200);
+    font-family: Source Sans Pro, sans-serif;
+    font-style: normal;
+}
+
+#basic-table td, #basic-table th {
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+}
+
+#basic-table th {
+    background-color: rgb(235,235,235);
+}
+
+#basic-table caption {
+    text-align: left;
+    padding: 0px 5px 20px 5px;
+    font-style: italic;
+}
+
+#styled-table {
+   border-collapse: collapse;
+   border-spacing: 0;
+   table-layout: auto;
+   transform-origin: left;
+   transform: scale(1.0); 
+   white-space: normal;
+   width: 100%;
+}
+
+#styled-table td, #styled-table th {
+   border: 1px solid #ddd;
+   padding: 10px 24px 10px 12px;
+   text-align: left;
+   overflow: hidden;
+}
+
+#styled-table tr:nth-child(even) {
+    background-color: #EDECEC;
+}
+
+#styled-table tr:hover {
+    background-color: #ddd;
+}
+
+#styled-table th {
+    background-color: #258375;
+    color: white;
+}
+
+#styled-table caption {
+    text-align: left;
+    padding: 0px 5px 20px 5px;
+    font-style: italic;
+}
+
+.figure {
+  display: flex;
+  justify-content: center;
+  # margin: 30px 0px;
+}
+
+.align-left {
+  justify-content: flex-start;
+}
+
+.align-center {
+  justify-content: center;
+  width: 100%;
+  float: clear; 
+}
+
+/* image styles */
+
+.box-shadow {
+  box-shadow: 5px 10px 15px #888888;
+}
+
+#summary {
+    display: block;
+    font-family: $font-family-head;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0.67em 0;
+    outline: none;
+    a {
+        color: $text-color;
+    }
+}
+
+.shaded-box {
+   background-color: #dcefea;
+   border-color: #cbe7e0;
+   border-style: solid;
+   border-width: thin;
+   # margin: auto;
+   # width: 50%;
+}
+
+#alt-shaded-box {
+    background-color: #dcefea;
+    border-color: #cbe7e0;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: thin;
+    line-height: 1.5;
+    margin: 25px 0px;
+    padding: 16px;
+}
+
+progress {
+   -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: AliceBlue;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: thin;
+  border-color: LightSlateGray;
+}
+
+progress::-webkit-progress-value {
+  background-color: CornflowerBlue;
+  border-radius: 7px;
+}
+
+/* hero image using a flex box */
+.hero-image {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: scroll;
+   align-items: center;
+   justify-content: center;
+   height: 175pt; /* 175pt */
+   margin: -40pt -120pt 40pt;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+   text-align: center;
+   color: white;
+ }
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* left-align image and wrap text around it */
+.float-left {  
+   float: left; 
+   margin: 6px 16px 16px 0px;
+   width: 400px;
+} 
+
+/* right-align image and wrap text around it */
+.float-right {  
+   float: right; 
+   margin: 8px 12px 12px 8px;
+   width: 300px;
+} 
+
+.center {
+   display: block;
+   float: none;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   padding: 10px 0px;
+   max-width: 720px;
+}
+
+.center-element {
+  max-width: fit-content;
+  margin-inline: auto;
+}
+
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.left {
+   display: block;
+   float: none;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding: 10px 10px 10px 0px;
+   max-width: 100%;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+#figure-caption {
+   font-size: 0.95em;
+   font-style: italic;
+   line-height: 1.6;
+   padding-top: 0.75em;
+   text-align: center; 
+}
+
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+}
