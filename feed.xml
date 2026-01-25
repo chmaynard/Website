@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-01-25T03:51:38-05:00</updated><id>/feed.xml</id><title type="html">Core Memory Music</title><author><name>Craig H Maynard</name></author><entry><title type="html">Gary Marcus Interview</title><link href="/posts/gary-marcus-interview" rel="alternate" type="text/html" title="Gary Marcus Interview" /><published>2026-01-21T00:00:00-05:00</published><updated>2026-01-21T00:00:00-05:00</updated><id>/posts/gary-marcus-interview</id><content type="html" xml:base="/posts/gary-marcus-interview"><![CDATA[<div style="text-align: center;">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-01-25T05:39:07-05:00</updated><id>/feed.xml</id><title type="html">Core Memory Music</title><author><name>Craig H Maynard</name></author><entry><title type="html">Rhapsody In Blue</title><link href="/posts/rhapsody-in-blue" rel="alternate" type="text/html" title="Rhapsody In Blue" /><published>2026-01-25T00:00:00-05:00</published><updated>2026-01-25T00:00:00-05:00</updated><id>/posts/rhapsody-in-blue</id><content type="html" xml:base="/posts/rhapsody-in-blue"><![CDATA[<p><br /></p>
+
+<div style="text-align: center;">
+
+  <h3 id="george-gershwin-18981937">George Gershwin (1898–1937)</h3>
+  <h3 id="rhapsody-in-blue-jazz-orchestra-version"><em>Rhapsody in Blue (jazz orchestra version)</em></h3>
+  <h4 id="all-star-orchestra">All-Star Orchestra</h4>
+  <h4 id="gerard-schwarz-conductor">Gerard Schwarz, conductor</h4>
+  <h4 id="lola-astanova-piano">Lola Astanova, piano</h4>
+
+</div>
+
+<p><br /></p>
+
+<div class="figure align-center" style="padding-top: 16px;">
+
+<figure style="padding-bottom:20px;">
+
+
+
+   
+   
+   
+
+   
+
+   <video controls="" width="640" height="360" preload="auto" style="background-color:black;">
+      <source src="https://corememorymusic.s3.us-west-001.backblazeb2.com/rhapsody-in-blue.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+   </video>
+
+
+
+
+
+
+
+</figure>
+
+</div>]]></content><author><name>Craig H Maynard</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Gary Marcus Interview</title><link href="/posts/gary-marcus-interview" rel="alternate" type="text/html" title="Gary Marcus Interview" /><published>2026-01-21T00:00:00-05:00</published><updated>2026-01-21T00:00:00-05:00</updated><id>/posts/gary-marcus-interview</id><content type="html" xml:base="/posts/gary-marcus-interview"><![CDATA[<div style="text-align: center;">
 
   <h3 id="the-real-eisman-playbook-episode-42">The Real Eisman Playbook: Episode 42</h3>
   <h4 id="gary-marcus-on-the-massive-problems-facing-ai--llms">Gary Marcus on the Massive Problems Facing AI &amp; LLMs</h4>
@@ -2184,48 +2223,7 @@ Philadelphia and at its Summer festivals in Vail and Saratoga.</p>
 Orchestra</a> 
 was founded in 1902. Konserthuset Stockholm has been its home since 1926. The
 orchestra gives around 100 concerts annually and participates in festivities
-associated with the Nobel Prize Award Ceremony.</p>]]></content><author><name>Craig H Maynard</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Rhapsody In Blue</title><link href="/posts/rhapsody-in-blue" rel="alternate" type="text/html" title="Rhapsody In Blue" /><published>2021-08-28T00:00:00-04:00</published><updated>2021-08-28T00:00:00-04:00</updated><id>/posts/rhapsody-in-blue</id><content type="html" xml:base="/posts/rhapsody-in-blue"><![CDATA[<p><br /></p>
-
-<div class="shaded-box" style="text-align: center;">
-
-  <h3 id="george-gershwin-18981937">George Gershwin (1898–1937)</h3>
-  <h3 id="rhapsody-in-blue-jazz-orchestra-version"><em>Rhapsody in Blue (jazz orchestra version)</em></h3>
-  <h4 id="all-star-orchestra">All-Star Orchestra</h4>
-  <h4 id="gerard-schwarz-conductor">Gerard Schwarz, conductor</h4>
-  <h4 id="lola-astanova-piano">Lola Astanova, piano</h4>
-
-  <p><br /></p>
-
-</div>
-
-<p><br /></p>
-
-<div class="figure align-center" style="padding-top: 16px;">
-
-<figure style="padding-bottom:20px;">
-
-
-
-   
-   
-   
-
-   
-
-   <video controls="" width="640" height="360" preload="auto" style="background-color:black;">
-      <source src="https://corememorymusic.s3.us-west-001.backblazeb2.com/rhapsody-in-blue.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-   </video>
-
-
-
-
-
-
-
-</figure>
-
-</div>]]></content><author><name>Craig H Maynard</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Beethoven Septet</title><link href="/posts/beethoven-septet" rel="alternate" type="text/html" title="Beethoven Septet" /><published>2021-08-21T00:00:00-04:00</published><updated>2021-08-21T00:00:00-04:00</updated><id>/posts/beethoven-septet</id><content type="html" xml:base="/posts/beethoven-septet"><![CDATA[<p><br /></p>
+associated with the Nobel Prize Award Ceremony.</p>]]></content><author><name>Craig H Maynard</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Beethoven Septet</title><link href="/posts/beethoven-septet" rel="alternate" type="text/html" title="Beethoven Septet" /><published>2021-08-21T00:00:00-04:00</published><updated>2021-08-21T00:00:00-04:00</updated><id>/posts/beethoven-septet</id><content type="html" xml:base="/posts/beethoven-septet"><![CDATA[<p><br /></p>
 
 <div class="shaded-box" style="text-align: center;">
 
