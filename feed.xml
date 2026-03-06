@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-03-05T12:31:57-05:00</updated><id>/feed.xml</id><title type="html">Core Memory Music</title><author><name>Craig H Maynard</name></author><entry><title type="html">Aljoša Jurinić plays Chopin</title><link href="/posts/chopin-scherzo" rel="alternate" type="text/html" title="Aljoša Jurinić plays Chopin" /><published>2026-02-19T00:00:00-05:00</published><updated>2026-02-19T00:00:00-05:00</updated><id>/posts/chopin-scherzo</id><content type="html" xml:base="/posts/chopin-scherzo"><![CDATA[<div style="text-align: center;">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-03-06T03:32:37-05:00</updated><id>/feed.xml</id><title type="html">Core Memory Music</title><author><name>Craig H Maynard</name></author><entry><title type="html">Beethoven Finale</title><link href="/posts/beethoven-finale" rel="alternate" type="text/html" title="Beethoven Finale" /><published>2026-03-06T00:00:00-05:00</published><updated>2026-03-06T00:00:00-05:00</updated><id>/posts/beethoven-finale</id><content type="html" xml:base="/posts/beethoven-finale"><![CDATA[<style>
+.mvmt {
+   # border: 1px solid black;
+   font-size: 1.1em;
+   margin: auto;
+   padding: 16px;
+   text-align: left;
+   width: 50%;
+}
+</style>
+
+<div style="text-align:center; padding-bottom:32px;">
+
+  <h3 id="ludwig-van-beethoven-1770--1827">Ludwig van Beethoven (1770 – 1827)</h3>
+  <h4 id="piano-trio-in-c-minor-op-1-no-3-iv-finale-prestissimo">Piano Trio in C minor, Op. 1 No. 3: IV. Finale. Prestissimo</h4>
+
+</div>
+
+<div class="figure align-center" style="padding-top: 16px;">
+
+<figure style="padding-bottom:20px;">
+
+
+
+   
+
+   <audio controls="" id="conducting-conversations" style="width: 500px;">
+      <source src="https://corememorymusic.s3.us-west-001.backblazeb2.com/Claremont.m4a" type="audio/mpeg" />
+      Your browser does not support the audio tag.
+   </audio>
+
+
+
+
+
+
+
+</figure>
+
+</div>
+
+<div class="figure align-center" style="padding-top: 16px;">
+
+<figure style="padding-bottom:20px;">
+
+
+
+   
+
+   <audio controls="" id="conducting-conversations" style="width: 500px;">
+      <source src="https://corememorymusic.s3.us-west-001.backblazeb2.com/Verbier.m4a" type="audio/mpeg" />
+      Your browser does not support the audio tag.
+   </audio>
+
+
+
+
+
+
+
+</figure>
+
+</div>]]></content><author><name>Craig H Maynard</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Aljoša Jurinić plays Chopin</title><link href="/posts/chopin-scherzo" rel="alternate" type="text/html" title="Aljoša Jurinić plays Chopin" /><published>2026-02-19T00:00:00-05:00</published><updated>2026-02-19T00:00:00-05:00</updated><id>/posts/chopin-scherzo</id><content type="html" xml:base="/posts/chopin-scherzo"><![CDATA[<div style="text-align: center;">
 
   <h3 id="frdric-chopin-18101849">Frédéric Chopin (1810–1849)</h3>
   <h4 id="piano-sonata-no-3-in-b-minor-op-58-ii-scherzo-molto-vivace">Piano Sonata No. 3 in B minor, Op. 58: II. Scherzo (Molto Vivace)</h4>
