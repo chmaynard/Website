@@ -1,0 +1,16 @@
+/* https://utopia.fyi */
+
+/* https://jameshfisher.com/2024/03/12/a-formula-for-responsive-font-size/ */
+
+:root {
+  font-size: calc(1rem + 0.25vw);
+}
+
+/* https://news.ycombinator.com/item?id=39702061 */
+
+clamp(1rem, 1rem + ((1.25 - 1) / (100 - 22.5) * (100vw - 22.5rem)), 1.25rem)
+
+/* https://news.ycombinator.com/item?id=39700880 */
+
+clamp(10px, 1rem + 0.25vw, 60px)
+
